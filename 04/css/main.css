@@ -5,10 +5,12 @@
     --color-background-gem: #7eb3f0;
     --color-background-branch: #ffcaca;
     --color-background-folder: #dcb5eb;
-    --color-background-signal: #9c80e7;
+    --color-background-signal: #8c6fdbc0;
     --color-background-laptop: #8b91e7;
-    --color-line-bottom: linear-gradient(to , #9b0fdb, #f59797);
-
+    --color-font-primary: rgb(100, 89, 89);
+    --color-font-secondary: rgb(170, 159, 159);
+    --color-line-bottom: linear-gradient(to left, #12e69f, #9b0fdb, #f59797);
+    
     font-family: 'Jura', sans-serif;
     font-size: 60%;
 }
@@ -21,14 +23,45 @@
 
 html,
 body{
-    height: 100vh;
     background: var(--color-background);
 }
+
+/* Estilos gerais */ 
 
 .container{
     margin: 0 auto;
     width: 95%;
 }
+
+.btn{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    margin: 2rem 0 4rem;
+
+    border: .3rem solid  rgba(128, 128, 128, 0.61);
+    border-radius: 1.2rem;
+    background-color: white;
+    transition: .3s;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(78, 70, 70);
+}
+
+.btn:hover{
+    background: rgba(224, 224, 224, 0.671);
+    border-color: rgba(44, 44, 44, 0.842);
+}
+
+span.border-bottom{
+    display: inline-block;
+    background: var(--color-line-bottom);
+    padding: .18rem;
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+/*****/
 
 /* Estilo do header */ 
 
@@ -42,7 +75,7 @@ nav.desktop{
 
 nav.mobile{
     position: relative;
-    margin: 1.5rem 0 2rem ;
+    margin: 1.5rem 0 8rem ;
 }
 
 nav.mobile i{
@@ -113,7 +146,7 @@ nav ul li a{
 
 nav.mobile .title{
     display: block;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
     color: white;
 }
 
@@ -130,4 +163,238 @@ nav.mobile .title p{
 
 /* Estilo da section.intro*/
 
+section.intro{
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 2rem 2rem 0 0;
+    border-bottom: .2rem solid rgba(165, 159, 159, 0.5);
+}
+
+/*aside.intro-content{
+    Utilizar display-grid no responsivo 
+}*/
+
+.intro-img-box{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+
+    margin: 2rem auto;
+    border: .3rem solid rgba(128, 128, 128, 0.61);
+    border-radius: 50%;
+}
+
+.intro-img-box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-image: url(../images/cellphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.intro-text-box{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.intro-text-box h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    color: var(--color-font-primary);
+}
+
+.intro-text-box p{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 1.5rem 2rem;
+    color: var(--color-font-secondary);
+}
+/*****/
+
+/* Estilo da section.first */
+
+section.first{
+    padding-top: 4rem;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    border-bottom: .2rem solid rgba(165, 159, 159, 0.5);
+}
+
+aside.first-content{
+    text-align: center;
+}
+
+.first-title h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    color: var(--color-font-primary);
+}
+
+.first-title > span.border-bottom{
+    margin-bottom: 0;
+}
+
+/*.first-grid-box{
+    Utilizar display-grid no responsivo 
+}*/
+
+.ico-box{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem auto 4rem;
+
+    border-radius: 50%;
+    border: .2rem solid rgba(128, 128, 128, 0.61);
+}
+
+.ico-box i{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 13rem;
+    height: 13rem;
+    margin: 5.8rem auto 4rem;
+
+    border-radius: 50%;
+    border: .2rem solid rgba(128, 128, 128, 0.61);
+
+    line-height: 13rem;
+    font-size: 6rem;
+}
+
+i.fa-code{
+    color: var(--color-background-branch);
+}
+
+i.fa-copy{
+    color: var(--color-background-laptop);
+}
+
+.ico-box >i.fa-gem{
+    color: var(--color-background-gem);
+}
+
+.grid-content{
+    max-width: 55rem;
+    display: inline-block;
+}
+
+.grid-content h2{
+    font-size: 2rem;
+    color: rgba(114, 111, 111, 0.795);
+    padding-bottom: 2rem;
+}
+
+.grid-content p{
+    font-size: 1.8rem;
+    color: rgb(170, 159, 159);
+}
+/*****/
+
+/* Estilo da section.second */
+section.second{
+    margin-top: -1.2rem;
+    padding-top: 4rem;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    border-bottom: .2rem solid rgba(165, 159, 159, 0.5);
+}
+
+aside.second-content{
+    text-align: center;
+}
+
+.second-title{
+    margin-bottom: 4rem;
+}
+
+.second-title h1{
+    font-size: 2.2rem;
+    color: rgb(170, 159, 159);
+    padding-bottom: 2rem;
+}
+
+.second-title p{
+    font-size: 1.5rem;
+    color: var(--color-font-secondary);
+    padding: 0 4rem;
+}
+
+/*.second-grid{
+    Utilizar display-grid no responsivo
+}*/
+
+.second-grid-box{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 35rem;
+    height: 20rem;
+}
+
+.second-grid-box:nth-of-type(1){
+    border-radius: 2rem 2rem 0 0;
+    background: var(--color-background-branch);
+}
+
+.second-grid-box:nth-of-type(2){
+    background: var(--color-background-folder);
+}
+
+.second-grid-box:nth-of-type(3){
+    background: var(--color-background-signal);
+}
+
+.second-grid-box:nth-of-type(4){
+    background: var(--color-background-laptop);
+}
+
+.second-grid-box:nth-of-type(5){
+    border-radius: 0 0 2rem 2rem;
+    background: var(--color-background-gem);
+}
+
+.second-grid-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.second-grid-content i{
+    font-size: 6rem;
+    padding-bottom: 2rem;
+}
+
+.second-grid-content h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.second-grid-content h3{
+    font-size: 1.2rem;
+}
+
+.second-text p{
+    padding: 0 2%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--color-font-secondary);
+}
 /*****/
