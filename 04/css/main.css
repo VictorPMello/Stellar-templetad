@@ -58,7 +58,7 @@ span.border-bottom{
     display: inline-block;
     background: var(--color-line-bottom);
     padding: .18rem;
-    width: 8rem;
+    width: 10rem;
     margin-bottom: 2rem;
 }
 /*****/
@@ -397,4 +397,92 @@ aside.second-content{
     font-size: 2rem;
     color: var(--color-font-secondary);
 }
+/*****/
+
+/* Estilo da section.about */
+section.about{
+    padding-top: 4rem;
+    width: 100%;
+    display: block;
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 7rem;
+}
+
+aside.about-content{
+    text-align: center;
+}
+
+aside.about-content h1{
+    font-size: 2.2rem;
+    color: rgb(170, 159, 159);
+    padding-bottom: 2rem;
+}
+
+aside.about-content p{
+    padding: 0 2%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--color-font-secondary);
+}
+
+aside.about-content > a{
+    margin-left:  1.5rem;
+    margin-right:  1.5rem;
+}
+
+aside.about-content > a:nth-of-type(1){
+    color: white;
+    background: var(--color-background-gem);
+    border-color: rgb(111, 136, 245);
+    transition: .3s;
+}
+
+aside.about-content > a:nth-of-type(1):hover{
+    background: rgb(34, 133, 214);
+    border-color: rgb(27, 48, 141);
+}
+/*****/
+
+/* Estilo da section.last */
+section.last{
+    color: white;
+    padding: 0 3rem;
+}
+
+aside.last-content h1{
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+}
+
+aside.last-content p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+aside.last-content > a{
+    color: white;
+    border-color: #da6f6f;
+    background: none;
+    transition: .3s;
+}
+
+aside.last-content > a:hover{
+    border-color: #b84141;
+    background: #e06565;
+}
+
+aside.contacts h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+aside.contacts ul{
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+
+
 /*****/
