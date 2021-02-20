@@ -483,6 +483,112 @@ aside.contacts ul{
     list-style-type: none;
 }
 
+.contacts-info{
+    display: flex;
+}
 
+.w50{
+    float: left;
+}
+.w50:nth-of-type(1){
+    padding-right:  4rem;
+}
 
+.contacts-info h2{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.contacts-info span{
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: .65rem;
+    color: rgba(70, 67, 67, 0.822);
+}
+
+.contacts-info .w50 > a{
+    font-size: 1.5rem;
+    color: rgba(70, 67, 67, 0.822);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(70, 67, 67, 0.822);
+    transition: .3s;
+}
+
+.contacts-info .w50 > a:hover{
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+ul.links{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 8rem;
+}
+
+ul.links li{
+    margin-left: 2rem;
+    position: relative;
+
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: .2rem solid white;
+    transition: .3s;
+}
+
+ul.links li:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+ul.links li a{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 8rem;
+    color: white;
+    font-size: 3rem;
+    transition: .3s;
+}
+
+ul.links li a:hover{
+    color: rgb(80, 78, 78);
+}
+/*****/
+
+/* Estilos do footer*/
+footer{
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wraper{
+    float: left;
+    border-right: .2rem solid white;
+    padding: 0 2rem;
+}
+
+.footer-wraper:nth-of-type(3){
+    border: none;
+}
+
+.footer-wraper p{
+    display: inline;
+    font-size: 1.5rem;
+    color: rgba(70, 67, 67, 0.822);
+}
+
+.footer-wraper a{
+    font-size: 1.5rem;
+    color: rgba(70, 67, 67, 0.822);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(70, 67, 67, 0.822);
+    transition: .3s;
+}
+
+.footer-wraper a:hover{
+    color: white;
+    border-bottom: none;
+}
 /*****/
