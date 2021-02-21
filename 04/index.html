@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header>
@@ -32,17 +33,25 @@
             </nav><!--.mobile-->
         
         <div class="container">
-            <nav class="desktop">
-                <ul>
-                    <li><a href="#intro">introduction</a></li>
-                    <li><a href="#first">first section</a></li>
-                    <li><a href="#second">second section</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contacts">contacts</a></li>
-                </ul>
-            </nav><!--.desktop-->
+                <div class="title">
+                    <i class="fas fa-rocket"></i>
+                    <h1>Stellar</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--.title-->
         </div><!--.container-->
     </header>
+
+    <div class="container">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#intro">introduction</a></li>
+                <li><a href="#first">first section</a></li>
+                <li><a href="#second">second section</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+        </nav><!--.desktop-->
+    </div><!--.container-->
 
 <div class="container">
     <section class="intro">
@@ -180,20 +189,18 @@
 
         <aside class="contacts">
             <h1>Ut pellentesque gravida porta.</h1>
-            <ul class="contacts-info">
-                <li>
+            <div class="contacts-info">
+                <div class="w50">
                     <h2>Address:</h2>
-                <li>
-                    <h2>phone:</h2>
-                <li>
+                    <h2>Phone:</h2>
                     <h2>Email:</h2>
-                <li>
+                </div>
+                <div class="w50">
                     <span>419 Gleason Shore Apt. 792</span>
-                <li>
                     <span>(000) 000-0000 x 0000</span>
-                <li>
                     <a href="#">igoris4307@uorak.com</a>
-            </ul><!--.contacts-info-->
+                </div>
+            </div><!--.contacts-info-->
 
             <ul class="links">
                 <li>
