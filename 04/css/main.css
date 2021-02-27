@@ -69,7 +69,8 @@ header{
     width: 100%;
 }
 
-nav.desktop{
+nav.desktop,
+.title-desktop{
     display: none;
 }
 

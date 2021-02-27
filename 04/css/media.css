@@ -31,7 +31,8 @@
     }
 
 
-    nav.desktop{
+    nav.desktop,
+    .title-desktop{
         display: block;
     }
     
@@ -52,22 +53,19 @@
         border-bottom: .2rem solid rgba(165, 159, 159, 0.5);
     }
     
-    
     nav.desktop ul li{
-        padding: 2rem;
+        line-height: 2rem;
+        width: 100%;
+        padding: 2rem 0;
         transition: .5s;
     }
 
     nav.desktop ul li:nth-of-type(1){
         border-radius: 2rem 0  0 0;
-        padding: 2rem;
-        transition: .5s;
     }
 
     nav.desktop ul li:nth-of-type(5){
         border-radius: 0 2rem 0 0;
-        padding: 2rem;
-        transition: .5s;
     }
     
     nav.desktop ul li:hover{
@@ -95,5 +93,70 @@
 
     .contacts-info{
         justify-content: center;
+    }
+
+    section.second{
+        margin-top: -1.3rem;
+    }
+
+    aside.second-content{
+        text-align: center;
+    }
+
+    .second-title{
+        margin-bottom: 4rem;
+    }
+
+    .second-title h1{
+        font-size: 2.2rem;
+        color: rgb(170, 159, 159);
+        padding-bottom: 2rem;
+    }
+
+    .second-title p{
+        font-size: 1.5rem;
+        color: var(--color-font-secondary);
+        padding: 0 4rem;
+    }
+
+    .second-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .second-grid-box{
+        margin: 0 auto;
+        max-width: 35rem;
+        height: 20rem;
+    }
+
+    .second-grid-box:nth-of-type(1){
+        border-radius: 2rem 2rem 0 0;
+        background: var(--color-background-branch);
+    }
+
+    .second-grid-box:nth-of-type(2){
+        background: var(--color-background-folder);
+    }
+
+    .second-grid-box:nth-of-type(3){
+        background: var(--color-background-signal);
+    }
+
+    .second-grid-box:nth-of-type(4){
+        background: var(--color-background-laptop);
+    }
+
+    .second-grid-box:nth-of-type(5){
+        border-radius: 0 0 2rem 2rem;
+        background: var(--color-background-gem);
+    }
+
+    .second-grid-content{
+        position: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
     }
 }
