@@ -54,10 +54,20 @@
     }
     
     nav.desktop ul li{
+        position: relative;
         line-height: 2rem;
         width: 100%;
         padding: 2rem 0;
         transition: .5s;
+    }
+
+    nav.desktop ul li span.select {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to left, #12e69f85, #9a0fdb93, #f59797a1);
+        width: 100%;
+        padding-top: .5rem;
+        display: block;
     }
 
     nav.desktop ul li:nth-of-type(1){
