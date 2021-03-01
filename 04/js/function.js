@@ -13,3 +13,12 @@ $(function(){
         return true;
     })
 });
+
+$(function(){
+    $('.desktop ul li').click(function(){
+        var idx = $('li').index();
+
+        $('ul li').find('span.select').removeClass('select');
+        $('li').eq(idx).find('span').addClass('select');
+    })
+})
