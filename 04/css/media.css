@@ -61,13 +61,18 @@
         transition: .5s;
     }
 
-    nav.desktop ul li span.select {
+    nav.desktop ul li .absolute{
+        width: 100%;
         position: absolute;
         bottom: 0;
+    }
+
+    nav.desktop ul li span.select {
         background: linear-gradient(to left, #12e69f85, #9a0fdb93, #f59797a1);
         width: 100%;
         padding-top: .5rem;
-        display: block;
+        display: flex;
+        position: static;
     }
 
     nav.desktop ul li:nth-of-type(1){
